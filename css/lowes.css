@@ -1,0 +1,545 @@
+body{
+    font-family: 'Lato', Arial, sans-serif;
+    
+}
+
+body#home{
+    background: #E3E3E3;
+}
+
+ul, ol, li{
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    text-align: left;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1{
+    font-family: 'Rokkitt', Times New Roman, serif;
+}
+
+p{
+    font-size: 14px;
+    text-align: left;
+}
+
+/******************************************** HEADER *************************************/
+.top-menu{
+    background: #fff;
+    width: 100%;
+    height: 76px;
+    position: absolute;
+    top: 0px;;
+    z-index: 2;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+#home-top-menu{
+    top: -76px;
+    border-bottom: none;
+}
+
+.top-menu-content{
+    margin: 0 auto;
+    width: 980px;
+    position: relative;
+}
+
+.top-menu-content .logo{
+    position: absolute;
+    left: 10px; top: 20px;
+}
+
+.top-menu-content ul{
+    float: right;
+    margin: 30px 0 0 0;
+}
+
+.top-menu-content ul li{
+    display: inline-block;
+    margin-left: 25px;
+    padding-bottom: 3px;
+}
+
+.top-menu-content ul li.active{
+    border-bottom: 2px solid #FFD301;
+    
+}
+
+.top-menu-content ul li.active a{
+    color: #004990;
+}
+
+.lt-ie9 .top-menu-content ul li{
+    margin-left: 5px;
+}
+
+.top-menu-content ul li a{
+    color: #999999;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.lt-ie9 .top-menu-content ul li{
+    margin-left: 20px;
+}
+
+.lt-ie9 .top-menu-content ul li a{
+    font-size: 13px;
+}
+/****************************************** END HEADER ***********************************/
+/****************************************** HOME ***********************************/
+
+/*this sets the boundaries for the absolutely positioned animated icons*/
+#home-content-boundary{
+    width: 1900px;
+    min-height: 670px;
+    margin: -15px auto 0;
+    overflow: hidden;
+    position: relative;
+  
+}
+
+#home-content-center{
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-bottom: 100px;
+}
+
+.home-content{
+    margin: 0 auto;
+    width: 980px;
+    padding-top: 76px;/*start below header height since header is absolute*/
+}
+
+.home-content .big-logo-container{
+    width: 668px;
+    height: 324px;
+    background: url('../img/home/big-logo-blank.png');
+    margin: 35px auto 20px;
+    display: none;
+    z-index: 0;
+    position: relative;
+}
+
+.home-content .big-logo-container #lowes-text{
+    position: absolute;
+    left:76px;
+    top: 126px;
+}
+
+.home-content .big-logo-container-loaded{
+    background: url('../img/home/big-logo-blank.png');/* hide lowes in house as per design */
+    position: absolute;
+    width: 668px;
+    height: 324px;
+    top: 111px;
+    left: 616px;
+}
+
+#home-content-boundary .icon{
+    position: absolute;
+    left: 0;
+    top: 400px;
+    z-index: 1;
+}
+
+#home-content-boundary #icon-1{ left:0px; top: 1200px; }
+#home-content-boundary #icon-2{ left:200px; top: 1200px; }
+#home-content-boundary #icon-3{ left:500px; top: 1200px; }
+#home-content-boundary #icon-4{ left:1150px; top: 1200px; }
+#home-content-boundary #icon-5{ left:1900px; top: 1200px; }
+#home-content-boundary #icon-6{ left:1900px; top: 300px; }
+#home-content-boundary #icon-7{ left:1900px; top: 1200px; }
+#home-content-boundary #icon-8{ left:1550px; top: 1200px; }
+#home-content-boundary #icon-9{ left:1200px; top: 1200px; }
+#home-content-boundary #icon-10{ left:940px; top: 1200px; }
+#home-content-boundary #icon-11{ left:0px; top: 600px; }
+#home-content-boundary #icon-12{ left:0px; top: 300px; }
+#home-content-boundary #icon-13{ left:880px; top: 1200px; }
+#home-content-boundary #icon-14{ left:1350px; top: 1200px; }
+#home-content-boundary #icon-15{ left:1800px; top: 400px; }
+#home-content-boundary #icon-16{ left:1700px; top: 400px; }
+#home-content-boundary #icon-17{ left:0px; top: -400px; }
+#home-content-boundary #icon-18{ left:0px; top: -400px; }
+#home-content-boundary #icon-19{ left:200px; top: -400px; }
+#home-content-boundary #icon-20{ left:453px; top: -400px; }
+#home-content-boundary #icon-21{ left:716px; top: 1000px; }
+#home-content-boundary #icon-22{ left:900px; top: -400px; }
+#home-content-boundary #icon-23{ left:1300px; top: -400px; }
+#home-content-boundary #icon-24{ left:1900px; top: -400px; }
+#home-content-boundary #icon-25{ left:1700px; top: -400px; }
+#home-content-boundary #icon-26{ left:1274px; top: -400px; }
+#home-content-boundary #icon-27{ left:1207px; top: -400px; }
+#home-content-boundary #icon-28{ left:1228px; top: -400px; }
+#home-content-boundary #icon-29{ left:1150px; top: -400px; }
+#home-content-boundary #icon-30{ left:1177px; top: -400px; }
+#home-content-boundary #icon-31{ left:937px; top: -400px; }
+#home-content-boundary #icon-32{ left:713px; top: -400px; }
+#home-content-boundary #icon-33{ left:644px; top: -400px; }
+#home-content-boundary #icon-34{ left:0px; top: -400px; }
+#home-content-boundary #icon-35{ left:620px; top: -400px; }
+#home-content-boundary #icon-36{ left:917px; top: -400px; }
+#home-content-boundary #icon-37{ left:711px; top: -400px; }
+#home-content-boundary #icon-38{ left:1167px; top: -400px; }
+
+#home h1{
+    font-size: 48px;
+    color: #004690;
+    font-weight: bold;
+    font-family: 'Rokkitt', serif;
+    text-align: center;
+    display: none;
+    line-height: 42px;
+}
+
+#green-button{
+    background: url('../img/home/green-button.png');
+    width: 260px;
+    height: 57px;
+margin: 45px auto 0;
+font-size: 21px;
+color: #fff;
+font-weight: bold;
+padding: 19px 0 0 0;
+text-align: center;
+display: block;
+display: none;
+}
+
+.lt-ie9 #green-button{
+    background: url('../img/home/green-button-ie8.png');
+}
+
+
+/****************************************** END HOME ***********************************/
+
+/****************************************** BEGIN OUR PROGRESS TABS ***********************************/
+body#our-progress{
+  
+    background: url('../img/progress/tab1-bg.png') #7ECC30 repeat-x;
+    background-position-x: center;
+    background-position-y: 140px;
+}
+
+body#retail-relevance{
+  
+    background: url('../img/progress/tab2-bg.png') #009CDB repeat-x;
+    background-position-x: center;
+    background-position-y: 140px;
+}
+
+.tabs-container{
+   background-color: #fff;
+
+   margin-top: 76px;
+    
+}
+
+.tabs-container .tab-content{
+    width: 980px;
+    margin: 0 auto;
+    padding-top: 25px;
+}
+
+
+.tabs-container .tab-content .tab{
+    color: #fff;
+    width: 276px;
+    height: 29px;
+    text-align: center;
+    font-size: 16px;
+    padding-top: 10px;
+    margin-left: 28px;
+    display: inline-block;
+}
+
+.tabs-container .tab-content #tab-1{
+    margin-left: 46px;
+}
+
+.tabs-container .tab-content #tab-1{
+    background: url('../img/progress/tab1.png');
+}
+
+#our-progress .tabs-container .tab-content #tab-1{
+  background: url('../img/progress/tab1-active.png');  
+} 
+
+.tabs-container .tab-content #tab-2{
+    background: url('../img/progress/tab2.png');
+}
+
+#retail-relevance .tabs-container .tab-content #tab-2{
+    background: url('../img/progress/tab2-active.png');
+}
+
+.tabs-container .tab-content #tab-3{
+    background: url('../img/progress/tab3.png');
+}
+
+.content{
+    width: 980px;
+    margin: 103px auto ;
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    
+}
+
+.content p{
+    width: 595px;
+    margin: 38px auto 0;
+}
+
+#our-progress .content p{
+    font-size: 24px;
+}
+
+.content p.learn-more{
+    color: #13AF4F;
+    font-size: 16px;
+}
+
+#our-progress .content h1, #our-progress .content p{
+    text-align: center;
+}
+
+.content h1{
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.icons-container{
+    width: 556px;
+    position: relative;
+    margin: 0 auto;
+}
+
+#retail-relevance .content{
+    margin-top: 40px;
+    position: relative;
+}
+.icons-container .line{
+    width: 448px;
+    height: 14px;
+    background-color: #fff;
+    position: absolute;
+    left: 69px; top:25px;
+}
+
+.icons-container .icon{
+    display: inline-block;
+    margin-left: 158px;
+    position: relative;
+    padding-top: 82px;
+    font-size: 16px;
+    min-width: 67px;
+    text-transform: uppercase;
+}
+
+.icons-container  a{
+    color: #fff;
+}
+
+.icons-container #strategy{
+   margin-left: -0px;
+   
+}
+
+.content .arrow{
+    position: absolute;
+    top: 280px;
+    cursor: pointer;
+}
+
+.content #arrow-left{
+
+    left: 0; 
+}
+
+.content #arrow-right{
+    
+    right: 0; 
+}
+
+
+
+.icons-container .bg{
+    position: absolute;
+    width: 100%;
+    left: 0; top: 0;
+}
+
+.icons-container #strategy .bg{
+    height: 67px;
+    background: url('../img/progress/icons/strategy.png') top center no-repeat;
+}
+
+.icons-container #process .bg{
+    height: 67px;
+     background: url('../img/progress/icons/process.png') top center no-repeat;
+}
+
+.icons-container #progress .bg{
+    height: 67px;
+    background: url('../img/progress/icons/progress.png') top center no-repeat;
+}
+
+#retail-relevance .content .slider{
+    width: 522px;
+    overflow: hidden;
+    margin: 28px 0 0 100px;
+    float: left;
+}
+
+#retail-relevance .content .slide-holder{
+    width: 2345px;
+    
+}
+
+#retail-relevance .content .slide{
+    width: 502px;
+    float: left;
+    height: 500px;
+    padding: 0 20px;
+}
+
+#retail-relevance .content p{
+    width: 100%;
+        font-weight: 300;
+        
+}
+
+#retail-relevance .content .left-column {
+    float: left;
+    width: 522px;
+
+}
+
+
+
+#retail-relevance .content .left-column h2{
+    font-size: 20px;
+    font-weight: normal;
+}
+
+#retail-relevance .content .left-column{
+    line-height: 21px;
+}
+
+#retail-relevance .content .left-column p.first{
+    margin-top: 0;
+}
+
+#retail-relevance .content .right-column{
+    float: right;
+    width: 209px;
+    margin: 58px 100px 0 0;
+    position: relative;
+}
+
+#retail-relevance .content .right-column img.photo{
+    margin-top: 30px;
+    
+}
+
+#retail-relevance .content .right-column p.photo-caption{
+    font-size: 12px;
+    text-align: center;
+    margin-top: 0;
+    width: 170px;
+}
+
+#retail-relevance .content .right-column h3{
+    text-transform: uppercase;
+    font-size: 16px;
+    position: absolute;
+    right: 10px;
+}
+
+#retail-relevance .content .right-column .play-button{
+    position: absolute;
+    top: 0; left: 15px;
+}
+
+/****************************************** END OUR PROGRESS TABS ***********************************/
+
+/****************************************** BEGIN FOOTER ***********************************/
+.footer{
+    background-color: #fff;
+    position: fixed;
+    bottom: 0; height: 53px;
+    width: 100%;
+    font-size: 13px;
+    color: #00498F;
+    z-index: 2;
+}
+
+.footer ul li{
+    display: inline-block;
+    line-height: 13px;
+}
+
+.footer ul.left {
+    float: left;
+}
+
+.footer ul.left li{
+    margin-right: 25px;
+}
+
+.footer a{
+    color: #929292;
+}
+
+.footer ul.right{
+    float: right;
+    margin-top: 17px;
+}
+
+.footer ul.right li{
+    padding: 0 10px;
+    border-right: solid 1px #929292;
+}
+
+.footer ul.right li.last{
+    border-right: none;
+}
+
+#footer-home{
+    bottom: -51px;
+}
+
+.footer .footer-content{
+    width: 980px;
+    margin: 0 auto;
+}
+
+.footer .left .download-pdf{
+    background: url('../img/footer/download-pdf-bg.png');
+        width: 109px;
+        height: 21px;
+        padding:9px 0 0 33px;
+        color: #fff;
+        margin: 10px 25px 0 0;
+}
+
+.footer .blue-bar{
+    height: 5px;
+    background: #00468C;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    
+}
+/****************************************** END FOOTER ***********************************/
